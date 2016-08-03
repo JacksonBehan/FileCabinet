@@ -6,7 +6,7 @@
           .doc
             %p.title= doc.title
             %p.date= "created " + time_ago_in_words(doc.created_at) + " ago"
-            %p.content= truncate(doc.content, length:50)
+            %p.content= truncate(doc.content, length:100)
     - else
       %h2 Create Doc!
       %p Start Creating Documents and Organizing your life!
